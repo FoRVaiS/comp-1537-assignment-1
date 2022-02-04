@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.985984rem;
+}
+
+h2 {
+  font-size: 2.48832rem;
+}
+
+h3 {
+  font-size: 2.0736rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.navigation {
+  margin-top: 3rem;
+}
+.navigation__left {
+  float: left;
+  width: 80%;
+}
+.navigation__right {
+  float: right;
+  width: 20%;
+}
+.navigation--list {
+  list-style: none;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0;
+}
+.navigation--item {
+  float: left;
+  padding: 0 0.5rem;
+}
+.navigation--link {
+  text-decoration: none;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo--img {
+  width: 100%;
+}
+
+.paragraph {
+  margin-bottom: 2ch;
+}
+
+.aside__right {
+  border: 1px solid #b3b3b3;
+}
+
+.body {
+  border: 1px solid #b3b3b3;
+  border-right: 0;
+}
+
+.aside__left, .aside__right, .main--container, .header, .body {
+  padding: 0.25rem;
+  float: left;
+}
+
+.aside__left {
+  width: 10%;
+}
+
+.aside__right {
+  margin-top: 2rem;
+  width: 20%;
+}
+
+.aside__right {
+  float: right;
+}
+
+.main--container {
+  width: 90%;
+}
+
+.body {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.header {
+  width: 100%;
+}
+
+.footer {
+  clear: both;
+}

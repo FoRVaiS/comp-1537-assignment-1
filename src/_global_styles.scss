@@ -1,0 +1,31 @@
+@use "./utils.scss";
+
+$font-scale: 1.2;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+@for $_ from 0 through 5 {
+    h#{$_ + 1} { font-size: #{1 * utils.pow($font-scale, 6 + -1 * $_)}rem};
+}
+
+p {
+    font-size: #{utils.pow($font-scale, 0)}rem;
+}
+
+small {
+    font-size: #{utils.pow($font-scale, -1)}rem;
+}
+

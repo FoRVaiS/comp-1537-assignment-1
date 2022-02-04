@@ -1,0 +1,40 @@
+@use "_global_styles.scss";
+
+@use "./components/" as *;
+
+.aside__left, .aside__right, .main--container, .header, .body {
+    padding: 0.25rem;
+    float: left;
+}
+
+.aside__left {
+    width: 10%;
+}
+
+.aside__right {
+    margin-top: 2rem;
+
+    width: 20%;
+}
+
+.aside__right {
+    float: right;
+}
+
+.main--container {
+    width: 90%;
+}
+
+.body {
+    margin-top: 2rem;
+
+    width: 80%;
+}
+
+.header {
+    width: 100%;
+}
+
+.footer {
+    clear: both;
+}
