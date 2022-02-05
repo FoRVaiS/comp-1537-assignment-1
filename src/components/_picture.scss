@@ -1,0 +1,25 @@
+.picture {
+    border: 1px solid hsl(0 , 0%, 70%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.5rem;
+
+    &__title, &__description {
+        text-align: center;
+    }
+
+    &__title {
+        background-color: rgb(202, 224, 75);
+
+        padding: 2px 0;
+        box-sizing: border-box;
+        
+    }
+
+    &__description {
+        padding: 0.25rem 0;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

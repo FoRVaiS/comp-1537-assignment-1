@@ -10,16 +10,18 @@ $font-scale: 1.2;
 }
 
 body {
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif;
+
+    background-color: hsl(0, 0%, 98%);
 }
 
 html {
     box-sizing: border-box;
 }
 
-@for $_ from 0 through 5 {
-    h#{$_ + 1} { font-size: #{1 * utils.pow($font-scale, 6 + -1 * $_)}rem};
-}
+// @for $_ from 0 through 5 {
+//     h#{$_ + 1} { font-size: #{1 * utils.pow($font-scale, 6 + -1 * $_)}rem};
+// }
 
 p {
     font-size: #{utils.pow($font-scale, 0)}rem;
@@ -27,5 +29,9 @@ p {
 
 small {
     font-size: #{utils.pow($font-scale, -1)}rem;
+}
+
+a {
+    text-decoration: none;
 }
 

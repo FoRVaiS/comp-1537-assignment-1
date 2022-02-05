@@ -1,0 +1,14 @@
+.quick-links {
+    
+    width: 75%;
+    margin: 0 auto;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__header {
+        margin-top: 1rem;
+        margin-bottom: 0.25rem;
+    }
+}
