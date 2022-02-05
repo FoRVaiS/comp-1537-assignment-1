@@ -24,11 +24,11 @@ html {
 // }
 
 p {
-    font-size: #{utils.pow($font-scale, 0)}rem;
+    font-size: 1rem;
 }
 
 small {
-    font-size: #{utils.pow($font-scale, -1)}rem;
+    font-size: 0.8rem;
 }
 
 a {

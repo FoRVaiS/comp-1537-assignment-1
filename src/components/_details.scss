@@ -9,6 +9,7 @@
     border: 1px solid vars.$border-color;
 
     padding: 0.25rem;
+    margin-left: #{vars.$padding-gap * 2};
 
     &__title, &__description {
         text-align: center;
@@ -26,6 +27,7 @@
     }
 
     &__image {
-        width: 100%;
+        max-inline-size: 100%;
+        min-inline-size: 100%;
     }
 }

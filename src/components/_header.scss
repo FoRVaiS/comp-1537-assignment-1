@@ -1,11 +1,16 @@
+@use '../vars';
+
 .header {
     font-family: serif;
 
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem vars.$padding-gap;
     padding-top: 0.5rem;
 
+    &__h-rule {
+        margin-bottom: 0.25rem;
+    }
+    
     &__subtitle {
-        margin-top: 0.25rem;
         color: hsl(0, 0%, 10%);
     }
 }

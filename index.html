@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <div id="empty-header"></div>
     <aside class="quick-links__bar">
         <div class="quick-links">
             <div>
@@ -43,12 +43,12 @@
             </div>
         </div>
     </aside>
-    <div id="container">
-        <div class="header">
+    <article id="main-container">
+        <header class="header">
             <h1 class="header__title">Placeholder.com</h1>
-            <hr>
+            <hr class="header__h-rule">
             <p class="header__subtitle"><small>From Forvpedia, population: 1</small></p>
-        </div>
+        </header>
         <table class="details">
             <td>
                 <h3 class="details__title">Placeholder.com</h3>
@@ -96,17 +96,20 @@
         </p>
         <table class="content-table">
             <td>
-                <ul class="content-table__list">
-                    <li><a href="#">More Ipsum!</a></li>
-                    <li><a href="#">See Also</a></li>
-                </ul>
+                <nav aria-label="Table of contents">
+                    <h4 class="content-table__header">Contents [<a href="#">hide</a>]</h4>
+                    <ul class="content-table__list" role="list">
+                        <li><a href="#more-ipsum">More Ipsum!</a></li>
+                        <li><a href="#see-also">See Also</a></li>
+                    </ul>
+                </nav>
             </td>
         </table>
-        <div class="header">
+        <header class="header">
             <h1 class="header__title">More Ipsum!</h1>
-            <hr>
+            <hr class="header__h-rule">
             <p class="header__subtitle"><small>It never ends...</small></p>
-        </div>
+        </header>
         <table class="details">
             <td>
                 <img src="https://via.placeholder.com/50" alt="A lower resolution image upscaled"
@@ -114,7 +117,7 @@
                 <p><small class="details__caption">A lower resolution image upscaled</small></p>
             </td>
         </table>
-        <p class="body__paragraph">
+        <p id="more-ipsum" class="body__paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
             doloremque? Necessitatibus voluptate, quam aut voluptatum labore illo quos blanditiis optio velit
             repellendus possimus quod inventore obcaecati minima nam vitae alias soluta tempore et nobis quas
@@ -150,16 +153,16 @@
             suscipit dolor. Rem, reprehenderit id at minus tenetur, sapiente asperiores veniam odio quaerat ab
             impedit, nobis iste cupiditate perferendis quae laudantium? Iure, quasi.
         </p>
-        <div id="see-also__header" class="header">
+        <header id="see-also__header" class="header">
             <h1 class="header__title">See Also</h1>
-            <hr>
-        </div>
+            <hr class="header__h-rule">
+        </header>
         <ul id="see-also">
             <li><a href="#">Lab Hub</a></li>
             <li><a href="#">Comp1537</a></li>
             <li><a href="#">BCIT</a></li>
         </ul>
-    </div>
+    </article>
 </body>
 
 </html>

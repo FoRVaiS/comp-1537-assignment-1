@@ -5,22 +5,27 @@
 @use "./utils" as util;
 @use "./vars";
 
-#container, .body__paragraph, .details, .content-table {
-    padding: 0.5rem;
+#main-container, .body__paragraph, .details, .content-table {
+    padding: vars.$padding-gap;
 }
 
-#container {
+#empty-header {
+    width: 100%;
+    height: 5rem;
+}
+
+#main-container {
     float: left;
 
     width: 85%;
 
-    background-color: hsl(0, 0%, 100%);
+    background-color: vars.$background-light;
     border: 1px solid vars.$border-color;
 }
 
 #see-also {
     padding: 0.5rem 0;
-    padding-left: 1.25rem;
+    padding-left: #{vars.$padding-gap + 0.75rem};
 
     &__header {
         padding-bottom: 0.25rem;
