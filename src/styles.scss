@@ -2,46 +2,27 @@
 
 @use "./components/" as *;
 
-.aside__left, .aside__right, .main--container, .header, .body {
-    padding: 0.25rem;
+@use "./utils" as util;
+@use "./vars";
+
+#container, .body__paragraph, .details, .content-table, .footer {
+    padding: 0.5rem;
+}
+
+#container {
     float: left;
-}
 
-.aside__left {
-    width: 10%;
-}
-
-.aside__right {
-    // margin-top: 2rem;
-
-    width: 20%;
-    float: right;
-}
-
-.header {
-    font-family: serif;
-}
-
-.main--container {
-    width: 90%;
+    width: 85%;
 
     background-color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(240, 10%, 50%);
+    border: 1px solid vars.$border-color;
 }
 
-.body {
-    width: 80%;
-}
+#see-also {
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
 
-.header {
-    width: 100%;
-    height: 5rem;
-}
-
-.content-list {
-    clear: both;
-}
-
-.footer {
-    clear: both;
+    &__header {
+        padding-bottom: 0.25rem;
+    }
 }

@@ -25,40 +25,40 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  display: inline-block;
-}
-.logo--img {
-  width: 100%;
-}
-
-.paragraph {
+.body__paragraph {
   margin-bottom: 2ch;
+  line-height: 1.4rem;
 }
 
-.picture {
-  border: 1px solid #b3b3b3;
+.details {
+  float: right;
+  width: 250px;
   background-color: #f2f2f2;
-  padding: 0.5rem;
+  border: 1px solid #73738c;
+  padding: 0.25rem;
 }
-.picture__title, .picture__description {
+.details__title, .details__description {
   text-align: center;
 }
-.picture__title {
+.details__title {
   background-color: #cae04b;
   padding: 2px 0;
   box-sizing: border-box;
 }
-.picture__description {
+.details__description {
   padding: 0.25rem 0;
 }
-.picture__image {
+.details__image {
   width: 100%;
 }
 
 .quick-links {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
+}
+.quick-links__bar {
+  float: left;
+  width: 15%;
 }
 .quick-links__list {
   list-style: none;
@@ -67,52 +67,48 @@ a {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
+.quick-links__h-rule {
+  border-radius: 50%;
+  color: rgba(115, 115, 140, 0.25);
+}
 
 .header {
   font-family: serif;
+  padding: 1.5rem 0.25rem;
+  padding-top: 0.5rem;
 }
 .header__subtitle {
   margin-top: 0.25rem;
   color: #1a1a1a;
 }
 
-.aside__left, .aside__right, .main--container, .header, .body {
-  padding: 0.25rem;
+.content-table {
+  border: 1px solid #cccccc;
+  width: 250px;
+  clear: both;
+  margin-left: 0.5rem;
+}
+.content-table__list {
+  width: 100%;
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+
+#container, .body__paragraph, .details, .content-table, .footer {
+  padding: 0.5rem;
+}
+
+#container {
   float: left;
-}
-
-.aside__left {
-  width: 10%;
-}
-
-.aside__right {
-  width: 20%;
-  float: right;
-}
-
-.header {
-  font-family: serif;
-}
-
-.main--container {
-  width: 90%;
+  width: 85%;
   background-color: white;
   border: 1px solid #73738c;
 }
 
-.body {
-  width: 80%;
+#see-also {
+  padding: 0.5rem 0;
+  padding-left: 1.25rem;
 }
-
-.header {
-  width: 100%;
-  height: 5rem;
-}
-
-.content-list {
-  clear: both;
-}
-
-.footer {
-  clear: both;
+#see-also__header {
+  padding-bottom: 0.25rem;
 }

@@ -1,7 +1,14 @@
-.picture {
-    border: 1px solid hsl(0 , 0%, 70%);
+@use "../vars";
+
+.details {
+    float: right;
+
+    width: 250px;
+
     background-color: hsl(0, 0%, 95%);
-    padding: 0.5rem;
+    border: 1px solid vars.$border-color;
+
+    padding: 0.25rem;
 
     &__title, &__description {
         text-align: center;
@@ -12,7 +19,6 @@
 
         padding: 2px 0;
         box-sizing: border-box;
-        
     }
 
     &__description {

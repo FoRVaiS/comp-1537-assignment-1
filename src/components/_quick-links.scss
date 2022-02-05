@@ -1,7 +1,13 @@
+@use "../vars";
+
 .quick-links {
-    
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
+
+    &__bar {
+        float: left;
+        width: 15%;
+    }
 
     &__list {
         list-style: none;
@@ -10,5 +16,11 @@
     &__header {
         margin-top: 1rem;
         margin-bottom: 0.25rem;
+    }
+
+    &__h-rule {
+        border-radius: 50%;
+        
+        color: hsla(240, 10%, 50%, 25%);
     }
 }
